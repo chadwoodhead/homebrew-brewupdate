@@ -8,7 +8,9 @@ class Brewupdate < Formula
   depends_on "terminal-notifier"
 
   def install
-	bin.install "Ruby/brewupdate"
+	system "./configure", "--disable-debug",
+        	              "--prefix=#{prefix}"
+	system "make", "install"
   end
 
 end
