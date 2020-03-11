@@ -13,5 +13,7 @@ brew upgrade
 brew doctor
 brew missing
 
+echo "Hi Lindsey"
+
 #Notify upgrade is complete
 terminal-notifier -message 'Brew update/upgrade complete!' -title '🍺 Homebrew' -sound default -appIcon https://docs.brew.sh/assets/img/homebrew-256x256.png
