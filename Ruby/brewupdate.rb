@@ -8,7 +8,7 @@ class Brewupdate < Formula
   depends_on "terminal-notifier"
 
   def install
-	bin.install "homebrew_update.sh" 
+	bin.install "bin/homebrew_update.sh" 
   end
 
 end
