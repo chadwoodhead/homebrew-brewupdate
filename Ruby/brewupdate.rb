@@ -8,8 +8,6 @@ class Brewupdate < Formula
   depends_on "terminal-notifier"
 
   def install
-	system "./configure", "--disable-debug",
-        	              "--prefix=#{prefix}"
 	system "make", "install"
   end
 
